@@ -17,7 +17,6 @@ public class FirstServerSocket {
                 try (Socket client = serverSocket.accept();
                      BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(client.getOutputStream()));) {
 
-
                     bw.write("Hallo Client");
                     bw.flush();
                     System.out.println("Daten an Client gesendet");
